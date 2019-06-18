@@ -1,0 +1,50 @@
+@import '../../scss/variables';
+
+.wrapper-nav {
+    background-color: $mediumDarkBrown;
+
+}
+
+.hamburger-menu {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background-size: 32px 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../img/menu.svg');
+    cursor: pointer;
+    transform: rotate(0);
+    transition: all .15s ease-in-out;
+}
+
+.is-active {
+    background-image: url('../../img/close.svg');
+    background-size: 28px 28px;
+    transform: rotate(90deg);
+    transition: all .15s ease-in-out;
+}
+
+.main-nav {
+    font-family: $fontTitle;
+    font-size: 0;
+    height: 0;
+    
+    &.active-nav {
+        height: auto;
+        font-size: 20px;
+        padding: 20px 20px 40px 20px;
+        transition: all .3s cubic-bezier(.03, 2.00, .83, -0.07);
+        transition: all .2s linear;
+    }
+
+    &__list {
+        // background-color: red;
+    }
+    &__item {
+        padding-bottom: 15px;
+    }
+    &__item:last-child {
+        padding-bottom: 0;
+    }
+}
