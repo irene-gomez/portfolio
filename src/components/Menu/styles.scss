@@ -16,6 +16,9 @@
     cursor: pointer;
     transform: rotate(0);
     transition: all .15s ease-in-out;
+    @media all and (min-width: $tablet) {
+        display: none;
+    }
 }
 
 .is-active {
@@ -29,6 +32,11 @@
     font-family: $fontTitle;
     font-size: 0;
     height: 0;
+    @media all and (min-width: $tablet) {
+        height: auto;
+        font-size: 20px;
+        
+    }
     
     &.active-nav {
         height: auto;
@@ -37,14 +45,30 @@
         transition: all .3s cubic-bezier(.03, 2.00, .83, -0.07);
         transition: all .2s linear;
     }
-
+    
     &__list {
-        // background-color: red;
+        @media all and (min-width: $tablet) {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
     }
     &__item {
+        cursor: pointer;
         padding-bottom: 15px;
+        @media all and (min-width: $tablet) {
+            padding-bottom: 0;
+            padding: 15px;
+        }
+        &:hover {
+            color: $sandBrown;
+            transition: all .1s;
+        }
     }
     &__item:last-child {
         padding-bottom: 0;
+        @media all and (min-width: $tablet) {
+            padding-bottom: 15px;
+        }
     }
 }

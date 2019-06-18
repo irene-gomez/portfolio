@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import './styles.scss';
 
 class Menu extends React.Component {
@@ -42,9 +44,7 @@ class Menu extends React.Component {
                 <nav className={`main-nav ${showNav}`}>
                     <ul className="main-nav__list">
                         {itemsMenu.map((item, index) => (
-                            <li key={index} className="main-nav__item">
-                                <a href="/">{item}</a>
-                            </li>
+                            <li key={index} className="main-nav__item">{item}</li>
                         ))}
                     </ul>
                 </nav>
@@ -52,5 +52,12 @@ class Menu extends React.Component {
         );
     }
 }
+
+Menu.propTypes = {
+    itemsMenu: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+    openOrClose: PropTypes.string,
+    showNav: PropTypes.string,
+    handleClickMenu: PropTypes.func,
+};
 
 export default Menu;
