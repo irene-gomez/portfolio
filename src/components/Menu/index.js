@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import './styles.scss';
@@ -11,6 +12,7 @@ class Menu extends React.Component {
             showNav: '',
         };
         this.handleClickMenu = this.handleClickMenu.bind(this);
+        this.closeMenu = this.closeMenu.bind(this);
     }
 
     handleClickMenu() {
@@ -32,8 +34,12 @@ class Menu extends React.Component {
             : this.setState({ showNav: '' });       
     }
 
+    closeMenu() {
+        this.menuOpenClose();
+        this.showCompleteNav();        
+    }
+    
     render() {
-        const { itemsMenu } = this.props;
         const { openOrClose, showNav } = this.state;
         return (
             <div className="wrapper-nav">
@@ -43,9 +49,15 @@ class Menu extends React.Component {
                 />
                 <nav className={`main-nav ${showNav}`}>
                     <ul className="main-nav__list">
-                        {itemsMenu.map((item, index) => (
-                            <li key={index} className="main-nav__item">{item}</li>
-                        ))}
+                        <li className="main-nav__item">
+                            <Link to="/" onClick={this.closeMenu}>Sobre mi</Link>
+                        </li>
+                        <li className="main-nav__item">
+                            <Link to="/projects" onClick={this.closeMenu}>Proyectos</Link>
+                        </li>
+                        <li className="main-nav__item">
+                            <Link to="/contact" onClick={this.closeMenu}>Contacto</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -54,7 +66,6 @@ class Menu extends React.Component {
 }
 
 Menu.propTypes = {
-    itemsMenu: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
     openOrClose: PropTypes.string,
     showNav: PropTypes.string,
     handleClickMenu: PropTypes.func,
