@@ -22,7 +22,7 @@ class App extends React.Component {
                 <header>
                     <Menu itemsMenu={itemsMenu}/>
                 </header>
-                <main className="main-content">
+                <main className="main-content column-center">
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Route path="/projects" component={Projects} />

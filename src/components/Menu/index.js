@@ -47,7 +47,7 @@ class Menu extends React.Component {
                     className={`hamburger-menu ${openOrClose}`}
                     onClick={this.handleClickMenu}
                 />
-                <nav className={`main-nav ${showNav}`}>
+                <nav className={`main-nav column-center ${showNav}`}>
                     <ul className="main-nav__list">
                         <li className="main-nav__item">
                             <Link to="/" onClick={this.closeMenu}>Sobre mi</Link>

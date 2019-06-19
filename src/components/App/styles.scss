@@ -1,13 +1,13 @@
 @import '../../scss/variables';
 
+@media all and (min-width: $desktop) {
+    .column-center {
+        max-width: 1000px;
+        margin: 0 auto;
+        // background-color: red;
+    }
+}
+
 .main-content {
     padding: 25px;
-}
-
-.section-first {
-
-}
-
-.content {
-    margin-bottom: .8em;
 }
