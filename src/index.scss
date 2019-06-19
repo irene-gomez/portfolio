@@ -20,4 +20,9 @@ body {
   font-size: 20px;
   color: $blackRock;
   line-height: 1.4;
+  background:
+		linear-gradient(90deg, #fff (26px - 2px), transparent 1%) center,
+		linear-gradient(#fff (26px - 2px), transparent 1%) center,
+		rgb(233, 233, 233);
+	background-size: 26px 26px;
 }
