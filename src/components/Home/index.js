@@ -3,9 +3,9 @@ import avatar from '../../img/avatar.jpeg'
 
 import './styles.scss';
 
-const technicalSkills = ['html5', 'css3', 'sass', 'javascript', 'gulp', 'react', 'git', 'github'];
-const scrumSkills = ['agile', 'scrum', 'trello', 'slack' , 'trabajo en equipo'];
-const softwareSkills = ['visual studio code', 'zeplin', 'photoshop', 'illustrator', 'indesign'];
+const technicalSkills = ['javascript', 'react', 'sass', 'css3', 'html5', 'gulp', ];
+const scrumSkills = ['agile', ' scrum', 'git', 'github', 'trello', 'slack', ];
+const softwareSkills = ['visual studio code', 'zeplin', 'photoshop', 'illustrator'];
 
 const Home = () => {
     return ( 

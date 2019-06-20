@@ -1,7 +1,11 @@
+.section-contact {
+    text-align: center;
+}
+
 .contact {
     &__list {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         margin-top: 1.2em;
     }
     &__item {
