@@ -4,10 +4,13 @@
     .column-center {
         max-width: 1000px;
         margin: 0 auto;
-        // background-color: red;
     }
 }
 
 .main-content {
     padding: 26px;
+    @media all and (min-width: $desktop) {
+    padding: 0;
+
+    }
 }
