@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ecb8b7d.chunk.css",
+    "main.css": "/static/css/main.9d2b3df5.chunk.css",
     "main.js": "/static/js/main.39a3d625.chunk.js",
     "main.js.map": "/static/js/main.39a3d625.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,9 +8,9 @@
     "static/js/2.13569312.chunk.js": "/static/js/2.13569312.chunk.js",
     "static/js/2.13569312.chunk.js.map": "/static/js/2.13569312.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c76eb6124060aa9817c04b890f6011f0.js": "/precache-manifest.c76eb6124060aa9817c04b890f6011f0.js",
+    "precache-manifest.f649283bb0392661976b1f4ff6d46e22.js": "/precache-manifest.f649283bb0392661976b1f4ff6d46e22.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.6ecb8b7d.chunk.css.map": "/static/css/main.6ecb8b7d.chunk.css.map",
+    "static/css/main.9d2b3df5.chunk.css.map": "/static/css/main.9d2b3df5.chunk.css.map",
     "static/media/01-rock-code.png": "/static/media/01-rock-code.54973a6f.png",
     "static/media/02-disena-tu-aventura_02.png": "/static/media/02-disena-tu-aventura_02.37ec4036.png",
     "static/media/03-codigo-heredado.png": "/static/media/03-codigo-heredado.6f4ffcb3.png",
