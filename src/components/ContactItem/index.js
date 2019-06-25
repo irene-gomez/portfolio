@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './styles.scss';
 
@@ -11,6 +12,11 @@ const ContactItem = props => {
             </a>
         </li>
     );
+};
+
+ContactItem.propTypes = {
+    hrefInfo: PropTypes.string,
+    icon: PropTypes.string,
 };
 
 export default ContactItem;
