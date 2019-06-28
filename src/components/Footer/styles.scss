@@ -1,0 +1,27 @@
+@import '../../scss/variables';
+
+.footer {
+    padding: 2em 1em;
+    background-image: linear-gradient(0deg, #f9ffec 0%, #f5fdf6 100%);
+    color: $grassGreen;
+    font-size: 16px;
+    font-weight: 600;
+    @media all and (min-width: $tablet) {
+        padding: 2em 26px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        @media all and (min-width: $desktop) {
+            justify-content: center;
+        }
+    }
+    &__item {
+        @media all and (min-width: $desktop) {
+            margin-right: 2em;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

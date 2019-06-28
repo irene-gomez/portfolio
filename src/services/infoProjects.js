@@ -30,7 +30,7 @@ const infoProjects = {
         {
             id: 4,
             name: 'Awesome Profile Cards',
-            description: 'Web realizada con JavaScript en el que puedes generar tú tarjeta de visita.',
+            description: 'Web realizada con JavaScript en el que puedes generar tu tarjeta de visita.',
             urlGithub: 'https://github.com/irene-gomez/f-m2-disena-tu-aventura',
             urlDemo: 'https://beta.adalab.es/f-m2-disena-tu-aventura/',
             image: require('../img/projects/02-disena-tu-aventura_02.png'),
@@ -42,6 +42,14 @@ const infoProjects = {
             urlGithub: 'https://github.com/irene-gomez/fairfax-m3-masters-of-react',
             urlDemo: 'https://beta.adalab.es/fairfax-m3-masters-of-react/',
             image: require('../img/projects/03-codigo-heredado.png'),
+        },
+        {
+            id: 6,
+            name: 'Pokédex',
+            description: 'SPA que muestra un listado de pokémon, los cuales son recogidos de una API pública',
+            urlGithub: 'https://github.com/irene-gomez/f-online-pokemon-irene-gomez',
+            urlDemo: 'http://beta.adalab.es/f-online-pokemon-irene-gomez/',
+            image: require('../img/projects/06-pokedex.png'),
         },
     ]   
 };
