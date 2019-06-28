@@ -11,7 +11,10 @@ const Home = () => {
     return ( 
         <section className="section section-first">
             <div className="wrapper__description">
-                <img className="section__image" src={avatar} alt="Foto Irene Gómez"/>
+                <div className="wrapper__image">
+                    <img className="section__image" src={avatar} alt="Foto Irene Gómez"/>
+                </div>
+                {/* <div className="section__image" /> */}
                 <div className="wrapper__text">
                     <p className="section__content--greeting">¡Hola!</p>
                     <p className="section__content">Me llamo Irene y tras más de 8 años en el sector laboral del diseño gráfico y editorial decidí cambiar el rumbo de mi vida.</p>
