@@ -1,7 +1,7 @@
 import React from 'react';
 import TitleSection from '../TitleSection';
 import CardProject from '../CardProject';
-import { infoProjects } from '../../services/infoProjects';
+import infoProjects from '../../services/infoProjects';
 
 import './styles.scss';
 
@@ -10,7 +10,7 @@ const Projects = () => {
         <section className="section section-first">
             <TitleSection  title='Proyectos' />
             <ul className="projects-list">
-                {infoProjects.map(project => (
+                {infoProjects.projects.map(project => (
                     <li key={project.id}>
                         <CardProject 
                             nameProject={project.name}
