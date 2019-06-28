@@ -1,19 +1,14 @@
 @import '../../scss/variables';
 
 .project {
-    width: 300px;
-    margin-bottom: 1.4em;
     background-color: $snowWhite;
     box-shadow: 2px 2px 10px rgba($blackRock, 0.2);
-    @media all and (min-width: $tablet) {
-        margin-right: 1.2em;
-    }
     &__image {
         display: block;
         height: 220px;
         width: 100%;
         object-fit: cover;
-        object-position: top left;
+        object-position: center;
     }
     &__name {
         border-left: 2px solid $darkGreen;
