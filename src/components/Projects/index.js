@@ -1,29 +1,37 @@
 import React from 'react';
+import { initGA , logPageView } from '../../services/reactGA';
 import TitleSection from '../TitleSection';
 import CardProject from '../CardProject';
 import infoProjects from '../../services/infoProjects';
 
 import './styles.scss';
 
-const Projects = () => {
-    return ( 
-        <section className="section section-first">
-            <TitleSection  title='Proyectos' />
-            <ul className="projects-list">
-                {infoProjects.projects.map(project => (
-                    <li key={project.id}>
-                        <CardProject 
-                            nameProject={project.name}
-                            description={project.description}
-                            urlGithub={project.urlGithub}
-                            urlDemo={project.urlDemo}
-                            image={project.image}
-                        />
-                    </li>
-                ))}
-            </ul>
-        </section>
-    );
+class Projects extends React.Component {
+    componentDidMount() {
+        initGA();
+        logPageView();
+    }
+
+    render() {
+        return ( 
+            <section className="section section-first">
+                <TitleSection  title='Proyectos' />
+                <ul className="projects-list">
+                    {infoProjects.projects.map(project => (
+                        <li key={project.id}>
+                            <CardProject 
+                                nameProject={project.name}
+                                description={project.description}
+                                urlGithub={project.urlGithub}
+                                urlDemo={project.urlDemo}
+                                image={project.image}
+                            />
+                        </li>
+                    ))}
+                </ul>
+            </section>
+        );
+    }
 }
  
 export default Projects;
