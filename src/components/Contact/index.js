@@ -1,5 +1,6 @@
 import React from 'react';
-import { initGA , logPageView } from '../../services/reactGA';
+import ReactGA from 'react-ga';
+import { initGA } from '../../services/reactGA';
 import TitleSection from '../TitleSection';
 import ContactItem from '../ContactItem';
 
@@ -8,7 +9,7 @@ import './styles.scss';
 class Contact extends React.Component {
     componentDidMount() {
         initGA();
-        logPageView();
+        ReactGA.pageview('/contact');
     }
 
     render() {

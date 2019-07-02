@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { Route, Switch } from 'react-router-dom';
 import { initGA , logPageView } from '../../services/reactGA';
 import Menu from '../Menu';
@@ -18,7 +19,7 @@ class App extends React.Component {
 
     componentDidMount() {
         initGA();
-        logPageView();
+        ReactGA.pageview('/');
     }
 
     render() {

@@ -1,5 +1,6 @@
 import React from 'react';
-import { initGA , logPageView } from '../../services/reactGA';
+import ReactGA from 'react-ga';
+import { initGA } from '../../services/reactGA';
 import TitleSection from '../TitleSection';
 import CardProject from '../CardProject';
 import infoProjects from '../../services/infoProjects';
@@ -9,7 +10,7 @@ import './styles.scss';
 class Projects extends React.Component {
     componentDidMount() {
         initGA();
-        logPageView();
+        ReactGA.pageview('/projects');
     }
 
     render() {
