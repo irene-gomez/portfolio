@@ -1,6 +1,6 @@
-import ReactGA from 'react-ga';
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { initGA , logPageView } from '../../services/reactGA';
 import Menu from '../Menu';
 import Home from '../Home';
 import Projects from '../Projects';
@@ -16,9 +16,9 @@ class App extends React.Component {
         }
     }
 
-    initializeReactGA() {
-        ReactGA.initialize('UA-31238727-1');
-        ReactGA.pageview('/');
+    componentDidMount() {
+        initGA();
+        logPageView();
     }
 
     render() {

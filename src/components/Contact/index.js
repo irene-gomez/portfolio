@@ -1,14 +1,8 @@
-import ReactGA from 'react-ga';
 import React from 'react';
 import TitleSection from '../TitleSection';
 import ContactItem from '../ContactItem';
 
 import './styles.scss';
-
-const initializeReactGA = () => {
-    ReactGA.initialize('UA-31238727-1');
-    ReactGA.pageview('/contact');
-};
 
 const Contact = () => {
     const emoji = '😀';
