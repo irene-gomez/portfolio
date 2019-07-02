@@ -1,3 +1,4 @@
+import ReactGA from 'react-ga';
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Menu from '../Menu';
@@ -13,6 +14,11 @@ class App extends React.Component {
         this.state = {
             
         }
+    }
+
+    initializeReactGA() {
+        ReactGA.initialize('UA-31238727-1');
+        ReactGA.pageview('/');
     }
 
     render() {
