@@ -16,7 +16,7 @@ const infoProjects = {
 			urlGithub:
 				'https://github.com/irene-gomez/fairfax-m4-eventbrite-eventos',
 			urlDemo:
-				'http://libertadpozos.github.io/fairfax-m4-eventbrite-eventos/#/',
+				'https://libertadpozos.github.io/fairfax-m4-eventbrite-eventos/#/',
 			image: require('../img/projects/04-eventbrite.png'),
 		},
 		{
@@ -45,7 +45,8 @@ const infoProjects = {
 			description:
 				'Web realizada con JavaScript en el que puedes generar tu tarjeta de visita.',
 			urlGithub: 'https://github.com/irene-gomez/f-m2-disena-tu-aventura',
-			urlDemo: 'https://beta.adalab.es/f-m2-disena-tu-aventura/',
+			urlDemo:
+				'https://rodriguezmontesinoseva.github.io/f-m2-disena-tu-aventura/',
 			image: require('../img/projects/02-disena-tu-aventura_02.png'),
 		},
 		{
@@ -56,7 +57,7 @@ const infoProjects = {
 			urlGithub:
 				'https://github.com/irene-gomez/fairfax-m3-masters-of-react',
 			urlDemo:
-				'http://libertadpozos.github.io/fairfax-m3-masters-of-react/#/',
+				'https://libertadpozos.github.io/fairfax-m3-masters-of-react/#/',
 			image: require('../img/projects/03-codigo-heredado.png'),
 		},
 		{
